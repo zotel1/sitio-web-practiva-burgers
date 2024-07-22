@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Bebas+Neue&family=Lato&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: rgb(85, 39, 6);
+}
+
+.hero {
+    height: 100vh;
+    /*background-image: url("../img/hero-empanadas.jpeg"); */
+    background: black;
+}
+
+.hero_header {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem;
+    padding-bottom: 0;
+}
+
+.hero_header .logo {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 2rem;
+    font-weight: 300;
+}
+
+.header_right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 1rem;
+}
+
+.header_right p {
+    font-family: 'Lato', 'sans-serif';
+}
+
+.header_right .menu {
+    font-family: 'Bebas Neue', cursive;
+    list-style: none;
+    display: flex;
+    font-weight: 300;
+    font-size: 1.4rem;
+    gap: 2rem;
+    letter-spacing: 1px;
+}
+
+.hero_main {
+    display: flex;
+    padding-inline: 6rem;
+}
+
+.hero_main > div {
+    flex: 1;
+}
+
+.hero_text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 3rem;
+}
+
+.hero_text h4 {
+    font-family: 'Bebas Neue', cursive;
+    font-weight: 300;
+    font-size: 1.2rem;
+    border: 2px dashed rgb(85, 39, 6);
+    width: max-content;
+    padding: .6rem;
+    padding-bottom: .4rem;
+    margin-bottom: 1rem;
+}
+
+.hero_text h2 {
+    font-family: 'Alfa Slab One', cursive;
+    font-size: 5rem;
+    line-height: 1;
+    text-shadow: 4px 4px 0 white;
+}
+
+.hero_text h3 {
+    font-family: 'Alfa Slab One', cursive;
+    font-size: 3rem;
+    text-shadow: 4px 4px 0 white;
+}
+
+.hero_img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-block: 3rem;
+    position: relative;
+}
+
+.hero_img img{
+    max-width: 400px;
+}
+
+.sale {
+    position: absolute;
+    bottom: 4rem;
+    left: 5rem;
+    background-color: tomato;
+    width: 100px;
+    height: 100px;
+    padding: 3.6rem;
+    border-radius: 50%;
+    border: 2px dashed white;
+    outline: 5px solid tomato;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Bebas Neue', cursive;
+    text-align: center;
+}
+
+.price {
+    font-size: 3rem;
+    line-height: 1;
+}
+
+.price small {
+    font-size: 1.4rem;
+}
+
+.only {
+    font-size: 1.8rem;
+    line-height: 1;
+    letter-spacing: 4px;
+}
+
+.price,
+.only,
+.price small {
+    color: white;
+}

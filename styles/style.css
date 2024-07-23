@@ -138,3 +138,53 @@
 .price small {
     color: white;
 }
+
+.grid {
+    padding: 6rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "item1 item2" "item1 item3";
+    gap: 2rem;
+}
+
+.grid_item {
+    border-radius: 1rem;
+    background-size: cover;
+    background-position: center center;
+    padding: 2rem;
+
+}
+
+.grid_item1 {
+    grid-area: item1;
+    background-image: url("../img/grid-big.jpeg");
+    height: 400px;
+}
+
+.grid_item2 {
+    grid-area: item2;
+    background-image: url("../img/grid-small1.jpeg");
+    
+}
+
+.grid_item3 {
+    grid-area: item3;
+    background-image: url("../img/grid-small2.jpeg");
+    
+}
+
+.grid_item h4,
+.grid_item h5 {
+    color: white;
+    font-family: 'Bebas Neue', cursive;
+    font-weight: 300;
+}
+
+.grid_item h5 {
+    font-size: 1.2rem;
+}
+
+.grid_item h4 {
+    font-size: 1.6rem;
+}

@@ -114,12 +114,12 @@
             <h4>BOOK YOUR TABLE</h4>
         </div>
         <form class="reservation_form">
-            <input type="text" placeholder="Name" name="name">
-            <input type="email" placeholder="Email" name="email">
-            <input type="date" placeholder="Date" name="date">
-            <input type="time" placeholder="Time" name="time">
-            <input type="text" placeholder="People" name="people">
-            <input type="button" value="Find a table">
+            <input class="name" type="text" placeholder="Name" name="name">
+            <input class="email" type="email" placeholder="Email" name="email">
+            <input class="date" type="text" placeholder="Date" name="date" onfocus="(this.type='date')" onblur="(this.type='text')">
+            <input class="time" type="text" placeholder="Time" name="time" onfocus="(this.type='time')" onblur="(this.type='text')">
+            <input class="people" type="text" placeholder="People" name="people">
+            <input class="button" type="button" value="Find a table">
         </form>
     </section>
 </body>

@@ -310,6 +310,20 @@
 .reservation {
     padding: 6rem;
     padding-top: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-image: 
+    url('../img/menu-1.png'),
+    url('../img/menu-2.png');
+    background-size: 
+    200px,
+    300px;
+    background-position: 
+    100px center,
+    1050px 100px;
 }
 
 .reservation_heading {
@@ -325,4 +339,50 @@
 .reservation_heading h4 {
     font-family: 'Alfa Slab One', cursive;
     font-size: 2rem;
+}
+
+.reservation_form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: "name  email" "date  time" "people button ";
+    width: 36rem;
+    gap: 1rem;
+}
+
+.reservation_form input {
+    padding: 0.75rem 1rem;
+    font-family: 'Bebas Neue', cursive;
+    font-weight: 300;
+    color: black;
+}
+
+.reservation_form .name {
+    grid-area: name;
+}
+
+.reservation_form .email {
+    grid-area: email;
+}
+
+.reservation_form .date {
+    grid-area: date;
+}
+
+.reservation_form .time {
+    grid-area: time;
+}
+.reservation_form .people{
+    grid-area: people;
+}
+
+.reservation_form .button {
+    grid-area: button;
+    border: 0;
+    background-color: red;
+    font-family: 'Alfa Slab One', cursive;
+    text-transform: uppercase;
+    color: white;
+    border-radius: 2px;
+    cursor: pointer;
 }

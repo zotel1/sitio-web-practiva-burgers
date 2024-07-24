@@ -293,6 +293,10 @@
     letter-spacing: 1px;
 }
 
+.inner_left p {
+    font-family: 'Lato';
+}
+
 .innet_left h3 {
     font-family: 'Alfa Slab One', cursive;
     font-size: 2rem;

@@ -307,3 +307,22 @@
 }
 
 /*********RESERVATION***********/
+.reservation {
+    padding: 6rem;
+    padding-top: 0;
+}
+
+.reservation_heading {
+    text-align: center;
+}
+
+.reservation_heading h5 {
+    font-family: 'Bebas Neue', cursive;
+    font-weight: 300;
+    font-size: 1.6rem;
+}
+
+.reservation_heading h4 {
+    font-family: 'Alfa Slab One', cursive;
+    font-size: 2rem;
+}

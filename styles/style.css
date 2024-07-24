@@ -255,3 +255,34 @@
     color: white;
     text-decoration: none;
 }
+
+/*************EVENTS***************/
+
+.events {
+    padding: 6rem;
+    padding-top: 0;
+}
+
+.inner {
+    display: flex;
+    padding: 2rem;
+    box-shadow: 15px 15px 30px rgb(62, 60, 60);
+}
+
+
+.inner_right {
+    flex: 1;
+    min-width: 0;
+}
+
+.inner_left h5 {
+    font-family: 'Bebas Neue', cursive;
+    font-weight: 300;
+    font-size: 1.6rem;
+    color: rgb(56, 56, 56);
+    letter-spacing: 1px;
+}
+
+.inner_right img {
+    max-width: 100%;
+}

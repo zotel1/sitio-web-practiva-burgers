@@ -271,7 +271,7 @@
 
 
 .inner_right {
-    flex: 1;
+    flex: 1.25;
     min-width: 0;
 }
 
@@ -283,6 +283,7 @@
 
 .inner_left {
     padding-block: 2rem;
+    padding-right: 2rem;
 }
 
 .inner_left h5 {
@@ -294,7 +295,10 @@
 }
 
 .inner_left p {
-    font-family: 'Lato';
+    font-family: 'Lato', sans-serif;
+    color: rgb(56, 56, 56);
+    font-size: 1.1rem;
+    
 }
 
 .innet_left h3 {

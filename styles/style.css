@@ -10,8 +10,7 @@
 
 .hero {
     height: 100vh;
-    /*background-image: url("../img/hero-empanadas.jpeg"); */
-    background: black;
+    background-image: url("../img/fondoburger.png")    
 }
 
 .hero_header {
@@ -317,8 +316,8 @@
     align-items: center;
     background-repeat: no-repeat;
     background-image: 
-    url('../img/menu-1.png'),
-    url('../img/menu-2.png');
+    url('../img/burger05.png'),
+    url('../img/burger07.png');
     background-size: 
     200px,
     300px;
@@ -398,7 +397,7 @@ footer {
 .footer {
     display: flex;
     flex-direction: column;
-    background-image: url("../img/burger.jpeg");
+    background-image: url("../img/burger06.png");
     background-size: cover;
     background-position: center center;
     padding: 2rem;
@@ -517,9 +516,22 @@ footer i {
         display: flex;
         flex-direction: column;
         padding-inline: 2rem;
+        padding-top: 3rem;
     }
 
     .grid_item {
         flex: 1;
+    }
+
+    .grid_item1 {
+        padding-bottom: 7rem;
+    }
+
+    .enjoy {
+        padding-inline: 2rem;
+    }
+
+    .titles {
+        padding-inline: 0;
     }
 }

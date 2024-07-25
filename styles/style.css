@@ -478,7 +478,7 @@ footer i {
 
 
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 768px) {
     
     .hero_header {
         flex-direction: column;
@@ -490,18 +490,17 @@ footer i {
     }
 
     .hero_img {
-    padding-top: 0;
+        padding-top: 0;
     }
-
+    
     .hero_img img {
-        max-width: 1000%;
+        max-width: 100%;
     }
-
-    .hero_main {
-        flex-direction: column;
-        padding-inline: 2rem;
-        padding-top: 3rem;
-    }
+    
+        .hero_main {
+            padding-inline: 2rem;
+            padding-top: 3rem;
+        }
 
     .grid {
         display: flex;
@@ -541,11 +540,12 @@ footer i {
     .events .inner_right {
         order: -1;
     }
-.events img {
-    width: auto;
-    height: 200px;
-    order: -1;
-}
+    
+    .events img {
+        width: auto;
+        height: 200px;
+        order: -1;
+    }
 
     .reservation {
         padding: 2rem;
@@ -580,4 +580,12 @@ footer i {
     .footer_bottom .icons {
         order: -1;
     }
+}
+
+@media screen and (max-width: 480px) {
+    
+        .hero_main {
+            flex-direction: column;
+            
+        }
 }

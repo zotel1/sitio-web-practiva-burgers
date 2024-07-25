@@ -487,7 +487,7 @@ footer i {
 
 
 
-@media screen and (min-width: 234px) and (max-width: 930px) {
+@media screen and (max-width: 480px) {
     
     .hero_header {
         flex-direction: column;

@@ -386,3 +386,92 @@
     border-radius: 2px;
     cursor: pointer;
 }
+
+/********* FOOTER **************/
+
+footer {
+    padding: 6rem;
+    padding-top: 0;
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    background-image: url("../img/burger.jpeg");
+    background-size: cover;
+    background-position: center center;
+    padding: 2rem;
+    position: relative;
+}
+
+.footer::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.628);
+}
+
+.footer_top,
+.footer_bottom {
+    z-index: 1;
+}
+
+footer h2,
+footer p,
+footer i {
+    color: white;
+}
+
+.footer_top {
+    display: flex;
+    padding-block: 3rem;
+}
+
+
+
+.footer_top > div {
+    flex: 1 ;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.footer_top p {
+    font-family: 'Lato', sans-serif;
+}
+
+.footer_top h2 {
+    font-family: 'Bebas Neue', cursive;
+    font-weight: 300;
+    font-size: 3rem;
+}
+
+.address {
+    align-items: flex-end;
+}
+
+.address p {
+    font-family: 'Bebas Neue', cursive ;
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+
+.footer_bottom {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 3rem;
+}
+
+.footer_bottom p {
+    font-family: 'Bebas Neue', cursive;
+        font-weight: 300;
+        letter-spacing: 1px;
+}
+
+.footer_bottom .icons {
+    display: flex;
+    gap: 0.5rem;
+}

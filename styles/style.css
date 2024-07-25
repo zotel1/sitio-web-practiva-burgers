@@ -474,7 +474,7 @@ footer i {
 
 .footer_bottom .icons {
     display: flex;
-    gap: 0.5rem;
+    gap: .5rem;
 }
 
 .bi::before {
@@ -490,4 +490,36 @@ footer i {
 
 @media screen and (min-width: 234px) and (max-width: 930px) {
     
+    .hero_header {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .header_right {
+        align-items: flex-start;
+    }
+
+    .hero_img {
+    padding-top: 0;
+    }
+
+    .hero_img img {
+        max-width: 100%;
+    }
+
+    .hero_main {
+        flex-direction: column;
+        padding-inline: 2rem;
+        padding-top: 3rem;
+    }
+
+    .grid {
+        display: flex;
+        flex-direction: column;
+        padding-inline: 2rem;
+    }
+
+    .grid_item {
+        flex: 1;
+    }
 }

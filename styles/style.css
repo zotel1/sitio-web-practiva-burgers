@@ -397,7 +397,7 @@ footer {
 .footer {
     display: flex;
     flex-direction: column;
-    background-image: url("../img/burger06.png");
+    background-image: url("../img/burger04.png");
     background-size: cover;
     background-position: center center;
     padding: 2rem;
@@ -503,7 +503,7 @@ footer i {
     }
 
     .hero_img img {
-        max-width: 100%;
+        max-width: 1000%;
     }
 
     .hero_main {
@@ -516,7 +516,7 @@ footer i {
         display: flex;
         flex-direction: column;
         padding-inline: 2rem;
-        padding-top: 3rem;
+        padding: 2rem;
     }
 
     .grid_item {
@@ -528,10 +528,65 @@ footer i {
     }
 
     .enjoy {
-        padding-inline: 2rem;
+        padding: 2rem;
     }
 
     .titles {
         padding-inline: 0;
+    }
+
+    .cards {
+        flex-direction: column;
+    }
+
+    .events {
+        padding: 2rem;
+    }
+
+    .events .inner {
+        flex-direction: column;
+    }
+
+    .events .inner_right {
+        order: -1;
+    }
+.events img {
+    width: auto;
+    height: 200px;
+    order: -1;
+}
+
+    .reservation {
+        padding: 2rem;
+        background-image: none;
+    }
+
+    .reservation_form {
+        width: 75%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    footer {
+        padding: 2rem;
+    }
+
+    .footer_top {
+        flex-direction: column;
+        padding: 0;
+        gap: 2rem;
+
+    }
+
+    .address {
+        align-items: flex-start;
+    }
+
+    .footer_bottom {
+        flex-direction: column;
+    }
+
+    .footer_bottom .icons {
+        order: -1;
     }
 }

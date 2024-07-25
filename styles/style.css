@@ -5,89 +5,87 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    color: rgb(85, 39, 6);
+    color: #44270f;
 }
 
 .hero {
-    height: 100vh;
-    background-image: url("../img/fondoburger.png")    
+    background-image: url("../img/hero-pattern.jpg");
 }
 
-.hero_header {
+.hero__header {
     display: flex;
     justify-content: space-between;
     padding: 2rem;
     padding-bottom: 0;
 }
 
-.hero_header .logo {
+.hero__header .logo {
     font-family: 'Bebas Neue', cursive;
-    font-size: 2rem;
     font-weight: 300;
+    font-size: 2rem;
 }
 
-.header_right {
+.header__right {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
     gap: 1rem;
 }
 
-.header_right p {
-    font-family: 'Lato', 'sans-serif';
+.header__right p {
+    font-family: 'Lato', sans-serif;
 }
 
-.header_right .menu {
+.header__right .menu {
     font-family: 'Bebas Neue', cursive;
+    font-weight: 300;
     list-style: none;
     display: flex;
-    font-weight: 300;
     font-size: 1.4rem;
     gap: 2rem;
-    letter-spacing: 1px;
+    letter-spacing: 2px;
 }
 
-.hero_main {
+.hero__main {
     display: flex;
     padding-inline: 6rem;
 }
 
-.hero_main > div {
+.hero__main>div {
     flex: 1;
 }
 
-.hero_text {
+.hero__text {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding-left: 3rem;
 }
 
-.hero_text h4 {
+.hero__text h4 {
     font-family: 'Bebas Neue', cursive;
     font-weight: 300;
     font-size: 1.2rem;
-    border: 2px dashed rgb(85, 39, 6);
+    border: 2px dashed #44270f;
     width: max-content;
     padding: .6rem;
     padding-bottom: .4rem;
     margin-bottom: 1rem;
 }
 
-.hero_text h2 {
+.hero__text h2 {
     font-family: 'Alfa Slab One', cursive;
     font-size: 5rem;
     line-height: 1;
     text-shadow: 4px 4px 0 white;
 }
 
-.hero_text h3 {
+.hero__text h3 {
     font-family: 'Alfa Slab One', cursive;
     font-size: 3rem;
     text-shadow: 4px 4px 0 white;
 }
 
-.hero_img {
+.hero__img {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -95,27 +93,33 @@
     position: relative;
 }
 
-.hero_img img{
+.hero__img img {
     max-width: 400px;
 }
 
 .sale {
     position: absolute;
     bottom: 4rem;
-    left: 5rem;
-    background-color: tomato;
+    left: 4rem;
+    background-color: #b91818;
     width: 100px;
     height: 100px;
     padding: 3.6rem;
     border-radius: 50%;
     border: 2px dashed white;
-    outline: 5px solid tomato;
+    outline: 5px solid #b91818;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     font-family: 'Bebas Neue', cursive;
     text-align: center;
+}
+
+.price,
+.only,
+.price small {
+    color: white;
 }
 
 .price {
@@ -133,61 +137,60 @@
     letter-spacing: 4px;
 }
 
-.price,
-.only,
-.price small {
-    color: white;
-}
+
+/**** GRID ****/
 
 .grid {
     padding: 6rem;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr;
-    grid-template-areas: "item1 item2" "item1 item3";
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+        "item1 item2"
+        "item1 item3";
     gap: 2rem;
 }
 
-.grid_item {
+.grid__item {
     border-radius: 1rem;
     background-size: cover;
     background-position: center center;
     padding: 2rem;
-
 }
 
-.grid_item1 {
-    grid-area: item1;
-    background-image: url("../img/grid-big.jpeg");
-    height: 400px;
-}
-
-.grid_item2 {
-    grid-area: item2;
-    background-image: url("../img/grid-small1.jpeg");
-    
-}
-
-.grid_item3 {
-    grid-area: item3;
-    background-image: url("../img/grid-small2.jpeg");
-    
-}
-
-.grid_item h4,
-.grid_item h5 {
+.grid__item h5,
+.grid__item h4 {
     color: white;
     font-family: 'Bebas Neue', cursive;
     font-weight: 300;
 }
 
-.grid_item h5 {
+.grid__item h5 {
     font-size: 1.2rem;
 }
 
-.grid_item h4 {
+.grid__item h4 {
     font-size: 1.6rem;
 }
+
+.grid__item1 {
+    grid-area: item1;
+    background-image: url("../img/grid-big.jpeg");
+    height: 400px;
+}
+
+.grid__item2 {
+    grid-area: item2;
+    background-image: url("../img/grid-small1.jpeg");
+}
+
+.grid__item3 {
+    grid-area: item3;
+    background-image: url("../img/grid-small2.jpeg");
+}
+
+
+/**** ENJOY ****/
 
 .enjoy {
     padding: 6rem;
@@ -200,14 +203,15 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 1rem;
 }
 
 .titles h4 {
     font-family: 'Bebas Neue', cursive;
     font-weight: 300;
     font-size: 1.2rem;
-    background-color: darkorange;
-    padding: .5rem .1rem 0.25rem 1rem;
+    background-color: #dfc42b;
+    padding: .5rem 1rem .25rem 1rem;
 }
 
 .titles h2 {
@@ -250,13 +254,13 @@
 .card a {
     font-family: 'Alfa Slab One', cursive;
     font-size: 1rem;
-    background-color: red;
+    background-color: #b81717;
     padding: .75rem 1rem;
     color: white;
     text-decoration: none;
 }
 
-/*************EVENTS***************/
+/**** EVENTS ****/
 
 .events {
     padding: 6rem;
@@ -266,47 +270,65 @@
 .inner {
     display: flex;
     padding: 2rem;
-    box-shadow: 15px 15px 30px rgb(62, 60, 60);
+    box-shadow: 15px 15px 30px #cccccc;
 }
 
-
-.inner_right {
-    flex: 1.25;
-    min-width: 0;
-}
-
-
-
-.inner_right img {
-    max-width: 100%;
-}
-
-.inner_left {
+.inner__left {
     padding-block: 2rem;
     padding-right: 2rem;
+    flex: 1;
+    position: relative;
 }
 
-.inner_left h5 {
+.inner__left h5 {
     font-family: 'Bebas Neue', cursive;
     font-weight: 300;
     font-size: 1.6rem;
-    color: rgb(56, 56, 56);
+    color: #4b4b4b;
     letter-spacing: 1px;
 }
 
-.inner_left p {
-    font-family: 'Lato', sans-serif;
-    color: rgb(56, 56, 56);
-    font-size: 1.1rem;
-    
-}
-
-.innet_left h3 {
+.inner__left h3 {
     font-family: 'Alfa Slab One', cursive;
     font-size: 2rem;
 }
 
-/*********RESERVATION***********/
+.inner__left p {
+    font-family: 'Lato', sans-serif;
+    color: #4b4b4b;
+    font-size: 1.1rem;
+}
+
+.inner__right {
+    flex: 1.25;
+    min-width: 0;
+}
+
+.inner__right img {
+    max-width: 100%;
+}
+
+.dots {
+    display: flex;
+    gap: 5px;
+    position: absolute;
+    bottom: 1rem;
+    left: 0;
+}
+
+.dot {
+    width: 15px;
+    height: 15px;
+    background-color: #cccccc;
+    border-radius: 50%;
+}
+
+.dot-y {
+    background-color: #dfc42b;
+}
+
+/**** RESERVATION ****/
+
 .reservation {
     padding: 6rem;
     padding-top: 0;
@@ -315,71 +337,75 @@
     gap: 2rem;
     align-items: center;
     background-repeat: no-repeat;
-    background-image: 
-    url('../img/burger05.png'),
-    url('../img/burger07.png');
-    background-size: 
-    200px,
-    300px;
-    background-position: 
-    100px center,
-    1050px 100px;
+    background-image:
+        url("../img/burger04.png"),
+        url("../img/burger05.png");
+    background-size:
+        300px,
+        350px;
+    background-position:
+        100px center,
+        1150px 100px;
 }
 
-.reservation_heading {
+.reservation__heading {
     text-align: center;
 }
 
-.reservation_heading h5 {
+.reservation__heading h5 {
     font-family: 'Bebas Neue', cursive;
     font-weight: 300;
     font-size: 1.6rem;
 }
 
-.reservation_heading h4 {
+.reservation__heading h4 {
     font-family: 'Alfa Slab One', cursive;
     font-size: 2rem;
 }
 
-.reservation_form {
+.reservation__form {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-areas: "name  email" "date  time" "people button ";
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas:
+        "name   email"
+        "date   time"
+        "people button";
     width: 36rem;
     gap: 1rem;
 }
 
-.reservation_form input {
-    padding: 0.75rem 1rem;
+.reservation__form input {
+    padding: .75rem 1rem;
     font-family: 'Bebas Neue', cursive;
     font-weight: 300;
     color: black;
 }
 
-.reservation_form .name {
+.reservation__form .name {
     grid-area: name;
 }
 
-.reservation_form .email {
+.reservation__form .email {
     grid-area: email;
 }
 
-.reservation_form .date {
+.reservation__form .date {
     grid-area: date;
 }
 
-.reservation_form .time {
+.reservation__form .time {
     grid-area: time;
 }
-.reservation_form .people{
+
+.reservation__form .people {
     grid-area: people;
 }
 
-.reservation_form .button {
+.reservation__form .button {
     grid-area: button;
     border: 0;
-    background-color: red;
+    background-color: #b81717;
     font-family: 'Alfa Slab One', cursive;
     text-transform: uppercase;
     color: white;
@@ -387,7 +413,8 @@
     cursor: pointer;
 }
 
-/********* FOOTER **************/
+
+/**** FOOTER ****/
 
 footer {
     padding: 6rem;
@@ -397,7 +424,7 @@ footer {
 .footer {
     display: flex;
     flex-direction: column;
-    background-image: url("../img/burger04.png");
+    background-image: url("../img/footer.jpg");
     background-size: cover;
     background-position: center center;
     padding: 2rem;
@@ -411,12 +438,7 @@ footer {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.628);
-}
-
-.footer_top,
-.footer_bottom {
-    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.685);
 }
 
 footer h2,
@@ -425,28 +447,31 @@ footer i {
     color: white;
 }
 
-.footer_top {
+.footer__top,
+.footer__bottom {
+    z-index: 1;
+}
+
+.footer__top {
     display: flex;
     padding-block: 3rem;
 }
 
-
-
-.footer_top > div {
-    flex: 1 ;
+.footer__top>div {
+    flex: 1;
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
-.footer_top p {
-    font-family: 'Lato', sans-serif;
-}
-
-.footer_top h2 {
+.footer__top h2 {
     font-family: 'Bebas Neue', cursive;
     font-weight: 300;
     font-size: 3rem;
+}
+
+.footer__top p {
+    font-family: 'Lato', sans-serif;
 }
 
 .address {
@@ -454,66 +479,63 @@ footer i {
 }
 
 .address p {
-    font-family: 'Bebas Neue', cursive ;
+    font-family: 'Bebas Neue', cursive;
     font-weight: 300;
     letter-spacing: 1px;
 }
 
-.footer_bottom {
+.footer__bottom {
     display: flex;
     justify-content: space-between;
     padding-top: 3rem;
 }
 
-.footer_bottom p {
+.footer__bottom p {
     font-family: 'Bebas Neue', cursive;
-        font-weight: 300;
-        letter-spacing: 1px;
+    font-weight: 300;
+    letter-spacing: 1px;
 }
 
-.footer_bottom .icons {
+.footer__bottom .icons {
     display: flex;
     gap: .5rem;
 }
 
-
-
 @media screen and (max-width: 768px) {
-    
-    .hero_header {
+
+    .hero__header {
         flex-direction: column;
         gap: 2rem;
     }
 
-    .header_right {
+    .header__right {
         align-items: flex-start;
     }
 
-    .hero_img {
+    .hero__img {
         padding-top: 0;
     }
-    
-    .hero_img img {
+
+    .hero__img img {
         max-width: 100%;
     }
-    
-        .hero_main {
-            padding-inline: 2rem;
-            padding-top: 3rem;
-        }
+
+    .hero__main {
+        padding-inline: 2rem;
+        padding-top: 3rem;
+    }
 
     .grid {
         display: flex;
         flex-direction: column;
-        padding-inline: 2rem;
         padding: 2rem;
     }
 
-    .grid_item {
+    .grid__item {
         flex: 1;
     }
 
-    .grid_item1 {
+    .grid__item1 {
         padding-bottom: 7rem;
     }
 
@@ -537,14 +559,12 @@ footer i {
         flex-direction: column;
     }
 
-    .events .inner_right {
+    .events .inner__right {
         order: -1;
     }
-    
-    .events img {
-        width: auto;
-        height: 200px;
-        order: -1;
+
+    .dots {
+        bottom: 0;
     }
 
     .reservation {
@@ -552,8 +572,8 @@ footer i {
         background-image: none;
     }
 
-    .reservation_form {
-        width: 75%;
+    .reservation__form {
+        width: 70%;
         display: flex;
         flex-direction: column;
     }
@@ -562,30 +582,30 @@ footer i {
         padding: 2rem;
     }
 
-    .footer_top {
+    .footer__top {
         flex-direction: column;
         padding: 0;
         gap: 2rem;
-
     }
 
     .address {
         align-items: flex-start;
     }
 
-    .footer_bottom {
+    .footer__bottom {
         flex-direction: column;
+        gap: 1rem;
     }
 
-    .footer_bottom .icons {
+    .footer__bottom .icons {
         order: -1;
     }
+
 }
 
-@media screen and (max-width: 326px) {
-    
-        .hero_main {
-            flex-direction: column;
-            
-        }
+@media screen and (max-width: 480px) {
+
+    .hero__main {
+        flex-direction: column;
+    }
 }

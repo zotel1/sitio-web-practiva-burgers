@@ -158,19 +158,19 @@
 
 .grid_item1 {
     grid-area: item1;
-    background-image: url("../img/grid-big.png");
+    background-image: url("../img/grid-big.jpeg");
     height: 400px;
 }
 
 .grid_item2 {
     grid-area: item2;
-    background-image: url("../img/grid-small1.png");
+    background-image: url("../img/grid-small1.jpeg");
     
 }
 
 .grid_item3 {
     grid-area: item3;
-    background-image: url("../img/grid-small2.png");
+    background-image: url("../img/grid-small2.jpeg");
     
 }
 
